@@ -1,6 +1,6 @@
 # es_2x_type_remove
 
-Elasticsearch 2.x 버젼에서 index 이하의 특정 type만 삭제 하는 기능으로 단순하게 bulk를 이용하여 삭제한다.
+Elasticsearch 2.x 버젼에서 index 이하의 특정 type만 삭제 하는 기능으로 단순하게 bulk를 이용하여 삭제한다.<br />
 ~~~es 2.x 에서는 type만 삭제하는 기능이 제공 되지 않는다.~~~
 
 ## 언어 및 환경
