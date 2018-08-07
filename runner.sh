@@ -1,6 +1,8 @@
 #!/bin/bash
 
+curl -s -XPOST localhost:9200/index/type/_bulk --data-binary "@id_list.json" > /dev/null
 FILESIZE=$(stat -c%s "id_list.json")
+
 echo "Size $FILESIZE"
 
 while [ $FILESIZE -gt 0 ]; do
@@ -14,5 +16,7 @@ curl -s -XPOST localhost:9200/index/type/_bulk --data-binary "@id_list.json" > /
 
 echo "REMOVED"
 sleep 1
+
+FILESIZE=$(stat -c%s "id_list.json")
 
 done
